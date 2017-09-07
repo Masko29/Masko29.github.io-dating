@@ -1,0 +1,37 @@
+.slid {
+  @include row;
+  overflow: hidden;
+  border-right: 2px solid #dcdcdc;
+  max-height: 466px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: $white;
+  position: relative;
+  .owl-item {
+    max-width: 485px;
+    width: 100%;
+  }
+  .owl-theme .owl-dots {
+    position: absolute;
+    top: 420px;
+    left: 40%;
+    .owl-dot {
+      span {
+        width: 10px;
+        height: 10px;
+        margin: 7px;
+        background: rgba(31, 31, 31, 0.6);
+        display: block;
+        -webkit-backface-visibility: visible;
+        transition: opacity .2s ease;
+        border-radius: 30px;
+        box-shadow: 0 0 3px white;
+      }
+      &.active span, &:hover span {
+        background: linear-gradient(#ffa608, #ff8c1d);
+        background-color: orange;
+        border: 1px solid rgba(31, 31, 31, 0.6);
+      }
+    }
+  }
+}

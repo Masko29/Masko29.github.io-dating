@@ -1,0 +1,61 @@
+.buttons {
+  margin-top: 20px;
+  padding: 0 30px;
+  .i-am {
+    vertical-align: super;
+    font-size: $fs-title;
+    color: $gray-input;
+    width: 20%;
+    display: inline-block;
+  }
+  .looking {
+    position: relative;
+    vertical-align: super;
+    font-size: $fs-title;
+    color: $gray-input;
+    width: 20%;
+    display: inline-block;
+    margin-left: 20px;
+    &:before {
+      background: url("../images/icons/search.png") no-repeat;
+      content: "";
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 0;
+      left:-20px;
+    }
+  }
+
+  .button-r, .button-l {
+    margin-bottom: -7px;
+    width: 24%;
+    display: inline-block;
+    .button {
+      height: 40px;
+      width: 100px;
+      background: url("../images/button.png") no-repeat;
+      .button-input {
+        display: none;
+      }
+      .button-label-f {
+        float: left;
+        width: 50%;
+        height: 40px;
+        cursor: pointer;
+      }
+      .button-label-m {
+        float: left;
+        width: 50%;
+        height: 40px;
+        cursor: pointer;
+      }
+      .button-input:checked + .button-label-f {
+        background: url("../images/button-left.png") no-repeat;
+      }
+      .button-input:checked + .button-label-m {
+        background: url("../images/button-right.png") no-repeat;
+      }
+    }
+  }
+}

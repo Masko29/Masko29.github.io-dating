@@ -1,0 +1,13 @@
+.footer {
+  height: 100px;
+  .logo-web {
+    border-top: 1px solid $gray-light;
+    .logo-footer {
+      margin: 30px 0 20px 20px;
+    }
+    .web-coder {
+      float: right;
+      margin: 20px 15px 20px 0;
+    }
+  }
+}

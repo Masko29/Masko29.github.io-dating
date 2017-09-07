@@ -1,0 +1,86 @@
+.columns {
+  padding: 20px 0;
+  .wrapper {
+    .title {
+      font-size: $fs-title-extra-large;
+      color: $gray-text;
+      margin-bottom: 20px;
+    }
+    .column-text {
+      max-width: 280px;
+      width: 100%;
+      color: $gray-text;
+      font-size: $fs-small;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+    blockquote {
+      max-width: 290px;
+      border-left: 2px solid $orange-text;
+      padding-left: 20px;
+      .column-orange-text {
+        color: $orange-text;
+        line-height: 16px;
+        max-width: 280px;
+      }
+    }
+    .column-text-m {
+      margin-top: 20px;
+      color: $gray-text;
+      font-size: $fs-small;
+      line-height: 20px;
+      max-width: 280px;
+    }
+    .list {
+      color: $gray-text;
+      font-size: $fs-small;
+      line-height: 22px;
+      margin-bottom: 10px;
+      max-width: 280px;
+      span {
+        font-size: $fs-extra-small;
+        color: #a3a3a3;
+      }
+    }
+    .point-f {
+      margin-top: 20px;
+      a {
+        color: $orange-text;
+      }
+    }
+    .point-l {
+      margin-bottom: 20px;
+    }
+    .italic {
+      position: relative;
+      margin: 20px 0;
+      padding: 10px 30px;
+      color:  $gray;
+      font-size: $fs-small;
+      max-width: 280px;
+      font-style: italic;
+      @include before-absolute {
+        content: url("../images/quote_left.png");
+        left: 0;
+        top: 0;
+      }
+      @include after-absolute {
+        content: url("../images/quote_right.png");
+        right: 0;
+        bottom: 0;
+      }
+    }
+    .more {
+      float: right;
+      position: relative;
+      padding: 0 10px ;
+      @include before-absolute {
+        content: url("../images/orange-triangle.png");
+        left: 0;
+      }
+      a {
+        color: $orange-text;
+      }
+    }
+  }
+}

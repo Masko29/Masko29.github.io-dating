@@ -1,0 +1,46 @@
+.slide-registraition {
+  background: linear-gradient( #ffa200, #ff8920);
+  width: 100%;
+  @include padding-v(20px);
+  .orange-back {
+    background: url("../images/point.png");
+    background-position:center;
+    background-size: cover;
+    max-height: 505px;
+    .slide-reg {
+      border-radius: 5px;
+      position: relative;
+      min-height: 468px;
+      z-index: 0;
+      border: 1px solid rgba(0,0,0,.2);
+      box-shadow:0 0 2px #e99702;
+      &:before{
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 50px;
+        box-shadow: 0 20px 4px #cc7618;
+        transform: rotate(-2deg);
+        left: 12px;
+        bottom: 15px;
+        z-index: -1;
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 50px;
+        box-shadow: 0 20px 4px #cc7618;
+        transform: rotate(2deg);
+        right: 12px;
+        bottom: 15px;
+        z-index: -1;
+      }
+    }
+  }
+}
+.no-cssgradients .slide-registraition{
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffa200', EndColorStr='#ff8920')"; /* IE8 */
+
+}

@@ -1,0 +1,103 @@
+@media (max-width: 991px) {
+  .slide-registraition {
+    .orange-back {
+      .slide-reg {
+        min-height: 300px;
+        .slid {
+          max-height: 300px;
+        }
+        .right-side {
+          max-height: 300px;
+          padding: 0 15px 15px 10px;
+          .gradient-text {
+            margin-top: -20px;
+          }
+          .buttons {
+            margin-top: 5px;
+            .button-l {
+
+            }
+            .looking {
+              font-size: $fs-base;
+              font-weight: bold;
+              width: 18%;
+            }
+            .button-r {
+
+            }
+            .in {
+
+            }
+          }
+          .input {
+            margin-top: 5px;
+            .in-name {
+              @include after-absolute {
+                display: block;
+                position: absolute;
+                content: url(../images/icons/cross.png);
+                top: -20px;
+              }
+            }
+            .in {
+              width: 285px;
+            }
+          }
+          .selects {
+            margin-top: 5px;
+            .day {
+              #day+.selecter-selected {
+                width: 77px;
+              }
+            }
+            .month {
+              width: 28%;
+              #month+.selecter-selected {
+                width: 110px;
+              }
+            }
+            .year {
+              #year + .selecter-selected {
+
+              }
+            }
+          }
+          .select-place {
+            margin-top: 3px;
+            .city {
+              #city+.selecter-selected {
+                width: 285px;
+              }
+            }
+          }
+          .checkbox {
+            margin-top: 3px;
+            .check {
+              ul {
+                li {
+                  margin-bottom: 5px;
+                }
+              }
+            }
+          }
+        }
+        .green-button {
+          margin-top: -6px;
+          .start {
+            width: 165px;
+            height: 40px;
+            margin-left: 15px;
+            a {
+              margin-top: 10px;
+              font-size: $fs-title;
+            }
+          }
+          .no-cssgradients .start {
+            background: url("../images/gb_bg.png") repeat-x;
+            background-position: center;
+          }
+        }
+      }
+    }
+  }
+}

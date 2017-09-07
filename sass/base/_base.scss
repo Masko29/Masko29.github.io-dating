@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  body {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    font-family: $source-sans;
+  }
+}
